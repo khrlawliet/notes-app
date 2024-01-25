@@ -1,7 +1,7 @@
 {
-  "name": "note-project",
+  "name": "notes-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple TypeScript, Node.js, and Express application for managing notes with CRUD operations.",
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/server.ts"
@@ -16,5 +16,13 @@
     "express": "^4.18.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khrlawliet/notes-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khrlawliet/notes-app/issues"
+  },
+  "homepage": "https://github.com/khrlawliet/notes-app#readme"
 }

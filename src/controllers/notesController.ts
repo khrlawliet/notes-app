@@ -20,7 +20,7 @@ export const getNoteById = (req: Request, res: Response) => {
 export const createNote = (req: Request, res: Response) => {
   const { title, body } = req.body;
   const newNote = notesService.createNote(title, body);
-  res.status(201).json(newNote);
+  res.status(201).json({ message: "Note successfully created", newNote });
 };
 
 export const updateNote = (req: Request, res: Response) => {
@@ -29,7 +29,7 @@ export const updateNote = (req: Request, res: Response) => {
   const updatedNote = notesService.updateNote(id, title, body);
 
   if (updatedNote) {
-    res.json(updatedNote);
+    res.json({ message: "Note successfully updated", updatedNote });
   } else {
     res.status(404).json({ message: "Note not found" });
   }
@@ -40,7 +40,7 @@ export const deleteNote = (req: Request, res: Response) => {
   const deletedNote = notesService.deleteNote(id);
 
   if (deletedNote) {
-    res.json(deletedNote);
+    res.json({ message: "Note successfully deleted", deletedNote });
   } else {
     res.status(404).json({ message: "Note not found" });
   }

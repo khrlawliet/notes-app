@@ -20,7 +20,7 @@ Make sure you have Node.js and npm installed on your machine.
 
 1.  Clone the repository:
 
-    `git clone https://github.com/your-username/notes-app.git`
+    `git clone https://github.com/khrlawliet/notes-app.git`
 
 2.  Change to the project directory:
 
@@ -56,8 +56,8 @@ Notes are stored in-memory using an array. Restarting the server will reset the 
 
 ### Data Validation
 
-Input data for creating and updating notes is validated to ensure that the content is a non-empty string.
+Input data for creating and updating notes is validated to ensure that the title and body is a non-empty string.
 
 ### Error Handling
 
-Basic error handling is implemented for common scenarios, such as a note not being found.
+Basic error handling is implemented for common scenarios, such as a note not being found and invalid title or body.
